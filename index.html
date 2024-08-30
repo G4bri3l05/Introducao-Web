@@ -3121,6 +3121,7 @@
       }
       @font-face {
         font-family: "??";
+        src: url("../../lib/fonts/default-font.woff2") format("woff2");
         unicode-range: U+0;
       }
       body {
@@ -4024,6 +4025,7 @@
         font-size: var(--code-size);
         padding: 0.1em 0.25em;
         -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
       }
       .cm-s-obsidian span.cm-inline-code span.cm-inline-code.hmd-hidden-token {
         font-size: 0px;
@@ -4649,6 +4651,7 @@
         white-space: pre-wrap;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
+        line-clamp: 3;
         color: var(--metadata-input-text-color);
         font-size: var(--metadata-input-font-size);
         max-height: 300px;
@@ -4658,6 +4661,7 @@
       }
       .metadata-input-longtext:focus {
         -webkit-line-clamp: unset;
+        line-clamp: unset;
       }
       .metadata-input-longtext:not(:empty) {
         display: -webkit-box;
